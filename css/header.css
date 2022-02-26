@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.header {
+  padding: 1em 0 0.7em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-profile-link {
+  margin-left: 4.1em;
+  text-decoration: none;
+}
+
+.page-profile {
+  display: inline-flex;
+  align-items: center;
+  max-width: max-content;
+  cursor: pointer;
+  color: #000;
+}
+
+.page-profile-logo {
+  width: 3.5em;
+  margin-right: 0.5em;
+}
+
+.page-profile-title {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+  .page-profile-link {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-profile-link {
+    margin-left: 0.8em;
+  }
+
+  .header {
+    padding-top: 1em;
+  }
+}

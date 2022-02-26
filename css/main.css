@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.docs-link span {
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 4em;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.docs-link span:hover {
+  color: var(--secondary-color);
+}
+
+.main-container {
+  margin-top: 10em;
+}
+
+.main-logo {
+  width: 30em;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-desc {
+  font-size: 1.5rem;
+  max-width: 20em;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.button-home {
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--bg-color);
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.main-start,
+.main-github {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  height: 3.1em;
+  width: 10.6em;
+  font-size: 1rem;
+  border-radius: 0.25em;
+  margin: 0 0.7em;
+  cursor: pointer;
+}
+
+.main-github {
+  border: solid 2px var(--primary-color);
+  background-color: transparent;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .docs-link {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .button-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-start {
+    margin-bottom: 1em;
+  }
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: var(--black-global);
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+
+.btn-close:hover {
+  color: var(--black-global);
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(var(--primary-color), 0.25);
+  opacity: 1;
+}
+
+.ms-2 {
+  margin-left: 0.5rem !important;
+}
+
+.push-to-right {
+  margin-right: auto !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
