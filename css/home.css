@@ -1,0 +1,8 @@
+.cover-bg {
+    background-image:url("../images/home_cover2.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
